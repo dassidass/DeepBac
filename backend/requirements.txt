@@ -1,0 +1,16 @@
+# Core: training and inference
+torch>=2.0
+pandas>=2.0
+numpy>=1.24
+
+# HTTP service
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.0
+PyJWT>=2.8
+
+# Database export (either driver works; pymysql is tried first)
+pymysql>=1.1
+
+# Configuration
+python-dotenv>=1.0

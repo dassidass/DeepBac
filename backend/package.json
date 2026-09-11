@@ -1,0 +1,44 @@
+{
+  "name": "deepbac-rag-backend",
+  "version": "1.1.0",
+  "description": "Retrieval-augmented question answering over an Arabic secondary-school curriculum: MySQL as the system of record, Qdrant for dense retrieval, an OpenAI-compatible LLM for grounded generation. Ships alongside the LSTM knowledge tracer in dkt/, which steers answer difficulty; see requirements.txt for that service's dependencies.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "sync": "node src/scripts/sync_chunks.js",
+    "backfill": "node src/scripts/backfill_qdrant.js",
+    "export:eval": "node src/scripts/export_eval_dataset.js"
+  },
+  "keywords": [
+    "rag",
+    "qdrant",
+    "mysql",
+    "arabic-nlp",
+    "education",
+    "retrieval-augmented-generation",
+    "knowledge-tracing",
+    "adaptive-learning"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@qdrant/js-client-rest": "^1.17.0",
+    "axios": "^1.13.1",
+    "cohere-ai": "^8.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.5",
+    "openai": "^4.20.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
