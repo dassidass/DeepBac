@@ -65,10 +65,9 @@ patience 5. CPU only; no GPU is required.
 | Metric | Test split |
 |---|---|
 | Mean squared error | 0.0012 |
-| Root mean squared error | 0.0350 |
-| Mean absolute error | 0.0278 (2.78%) |
-| R² | 0.916 |
-| AUC, binarised at 0.5 | 0.983 |
+| Root mean squared error | 0.035 |
+| Mean absolute error | 0.028 (2.8%) |
+| R² | 0.91 |
 
 The model explains over 91% of the variance in the held-out learners'
 performance trajectories, and the typical prediction lands within roughly 2.8
